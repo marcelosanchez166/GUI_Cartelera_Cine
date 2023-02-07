@@ -159,8 +159,7 @@ Cuadrotexto.grid(row=24, column=2, pady=1, columnspan=22)
 
 
 # crea un boton con texto dentro y se le pasa la funcion boton1
-Enviarboton = Button(raiz, width=10, height=1,
-                     text="Mostrar", command=MostrarDatos)
+Enviarboton = Button(raiz, width=10, height=1,text="Mostrar", command=MostrarDatos)
 Enviarboton.config(bg="#008B8B", fg="#191970", font="cursiva")
 Enviarboton.grid(row=26, column=2, pady=30, padx=30, columnspan=3)
 
@@ -182,8 +181,7 @@ Genero.grid(row=3, column=0, columnspan=9)
 masculino = Radiobutton(raiz, text="Masculino",
                         variable=varOpcion, value=1, command=imprimirOpcion)
 masculino.grid(row=4, column=0, sticky="w", padx=10, pady=8)
-femenino = Radiobutton(raiz, text="Femenino",
-                       variable=varOpcion, value=2, command=imprimirOpcion)
+femenino = Radiobutton(raiz, text="Femenino",variable=varOpcion, value=2, command=imprimirOpcion)
 femenino.grid(row=4, column=1, sticky="w", padx=8, pady=8)
 
 # Una etiqueta no se puede empaquetar de una vez
@@ -218,17 +216,13 @@ texto1.grid(row=6, column=0, pady=6)
 
 # Con la opcion variable=Futbol o cualquier otra opcion se le esta pasando al checkbox la variable con valor entero ya sea cero o uno
 # el metodo command se le pasa la funcion al boton en este caso al checkbox
-Button1 = Checkbutton(raiz, text="Futbol", variable=Futbol,
-                      onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
+Button1 = Checkbutton(raiz, text="Futbol", variable=Futbol,onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
 Button1.grid(row=7, column=0, padx=4, pady=4)
-Button2 = Checkbutton(raiz, text="Boxeo", variable=Boxeo,
-                      onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
+Button2 = Checkbutton(raiz, text="Boxeo", variable=Boxeo,onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
 Button2.grid(row=7, column=1, padx=4, pady=4)
-Button3 = Checkbutton(raiz, text="Tenis", variable=Tenis,
-                      onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
+Button3 = Checkbutton(raiz, text="Tenis", variable=Tenis,onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
 Button3.grid(row=7, column=2, padx=1, pady=4)
-Button4 = Checkbutton(raiz, text="Pin Pon", variable=Pin_Pon,
-                      onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
+Button4 = Checkbutton(raiz, text="Pin Pon", variable=Pin_Pon,onvalue=1, offvalue=0, command=opcionesDeportes, width=10)
 Button4.grid(row=7, column=3, padx=4, pady=4)
 # La opcion onvalue=1 le dice al checkbox que esta marcada, y la opcion offvalue=0 le dice que no esta seleccionado, y cuando llega al if
 # Hace la validacion si el checkbox esta seleccionado

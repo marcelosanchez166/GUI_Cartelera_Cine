@@ -81,8 +81,7 @@ PeliLabel = Label(raiz, text="Peliculas ", padx=31)
 PeliLabel.grid(row=3, column=0)
 PeliLabel.config(bg="#8A2BE2", fg="#000000", font="italic")
 pelicula = ttk.Combobox(raiz, textvariable=selected_movie)
-pelicula["values"] = ["Harry potter",
-                      "Donde estan las rubias", "Jurasic World"]
+pelicula["values"] = ["Harry potter","Donde estan las rubias", "Jurasic World"]
 # sirve para que aparezca una opcion por defecto en el combobox, se le pone la posicion del valor que quiero que salga
 pelicula.current(0)
 pelicula.grid(row=3, column=1)
@@ -127,8 +126,7 @@ def Borrar():
     Message.delete(1.0, END)
 
 
-botondelete = Button(raiz, text="Eliminar Datos",
-                     width=12, command=lambda: Borrar())
+botondelete = Button(raiz, text="Eliminar Datos",width=12, command=lambda: Borrar())
 botondelete.config(bg="#008B8B", fg="#191970", font="cursiva")
 botondelete.grid(row=12, column=1, columnspan=8)
 
